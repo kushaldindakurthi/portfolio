@@ -9,6 +9,7 @@ import Profile from "./profile/page";
 import Certifications from "./certifications/page";
 import Contact from "./contact/page";
 import Projectsection from "./projectsection/page";
+import { Analytics } from "@vercel/analytics/react"
 
 const Home =()=>{
   return(
