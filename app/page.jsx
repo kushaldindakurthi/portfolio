@@ -94,6 +94,7 @@ const Home =()=>{
       </section>
       
   );
+  <Analytics />
 };
 
 export default Home;
