@@ -23,6 +23,26 @@ const services = [
     logo: "/assets/logo/nptel.svg",
     href: "https://drive.google.com/file/d/1uXnFj7d9MkSIatSTZ5Ef8Uq31T_Pyofn/view?usp=drive_link",
   },
+  {
+    num: "03",
+    title: "Salesforce: AI Associate",
+    description:
+      "Completed the Salesforce AI Associate certification. Learned the basics of AI, how it's used in Salesforce.",
+    company: "Salesforce",
+    technologies: ["AI Basics", "Salesforce", "Responsible AI"],
+    logo: "/assets/logo/salesforce.svg",
+    href: "https://drive.google.com/file/d/1PUrAvHwTXibZOS6WhN10fkSKNdtE5a5s/view?usp=drive_link",
+  },
+  {
+    num: "04",
+    title: "Salesforce: AI Specialist",
+    description:
+      "Completed the Salesforce AI Specialist certification. Learned to improve service using Salesforce tools.",
+    company: "Salesforce",
+    technologies: ["Service Cloud", "Automation", "Customer Service"],
+    logo: "/assets/logo/salesforce.svg",
+    href: "https://drive.google.com/file/d/1RRYS4OM3RV5ypQg4_qQtHQ20rKvYTnGo/view?usp=sharing",
+  },
 ];
 
 const Certifications = () => {

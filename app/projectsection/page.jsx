@@ -17,14 +17,14 @@ const projects=[
         num: '01',
         category: 'ML & Web Development',
         title: 'CardioInsight',
-        description: 'Developed a cardiovascular disease prediction application using FastAPI and ML. Implemented an intuitive interface for health metrics input and created a PDF report generator that provides personalized assessments and recommendations based on prediction results.',
+        description: 'Developed a cardiovascular disease prediction application using Flask and ML. Implemented an intuitive interface for health metrics input and created a PDF report generator that provides personalized assessments and recommendations based on prediction results.',
         stack: [
             { name: "ML" }, 
             { name: "React" }, 
-            { name: "FastAPI" },
+            { name: "Flask" },
         ],
         image: '/assets/projectsection/cardio.png',
-        live: '',
+        live: 'https://cardioinsight.vercel.app/',
         github: 'https://github.com/kushaldindakurthi/CardioInsight'
     },
     {
@@ -38,7 +38,7 @@ const projects=[
             { name: "Tailwind CSS" },
         ],
         image: '/assets/projectsection/portfolio.png',
-        live: '',
+        live: 'https://kushal29d-portfolio.vercel.app/',
         github: 'https://github.com/kushaldindakurthi/portfolio'
     },
     {
@@ -51,8 +51,7 @@ const projects=[
             { name: "CSS3" }, 
             { name: "JS" }, 
             { name: "Flask" }, 
-            { name: "OpenCV" }, 
-            { name: "ML" }
+            { name: "OpenCV" },
         ],
         image: '/assets/projectsection/gms.png',
         live: '',
@@ -69,7 +68,7 @@ const projects=[
             { name: "JavaScript" }
         ],
         image: '/assets/projectsection/rms.png',
-        live: '',
+        live: 'https://kushaldindakurthi.github.io/RMS/',
         github: 'https://github.com/kushaldindakurthi/RMS'
     },
     
