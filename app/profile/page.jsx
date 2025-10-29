@@ -1,35 +1,5 @@
 "use client";
 
-const experience={
-    icon:'/assests/resume/badge.svg',
-    title:'Experience',
-    description:
-    "Engaged in activities that enhance creativity, teamwork, and leadership beyond academics.",
-    items:[
-        {
-            company:"e-DAM",
-            position:'Video Editor',
-            duration:"Apr'24 - Present",
-            description:"Edited podcast episodes utilizing professional video editing software such as Inshot, VN and Audacity, enhancing audio clarity and visual appeal.",
-            logo:'/assets/logo/edam.svg', 
-        },
-        {
-            company:"E-Cell",
-            position:'Member',
-            duration:"Oct'23 - Present",
-            description:"Supported team activities and contributed to achieving organizational goals, fostering a collaborative.",
-            logo:'/assets/logo/ecell.svg',
-        },
-        {
-            company:"Eduskills",
-            position:'Intern',
-            duration:"Apr'24 - Jun'24",
-            description:"Successfully completed a 3-month internship, gaining hands-on experience in implementing cutting-edge technologies in app development.",
-            logo:'/assets/logo/eduskills.svg', 
-        },
-    ],
-};
-
 const education={
     icon:'/assests/resume/cap.svg',
     title:'Education',
@@ -40,27 +10,48 @@ const education={
             institution:"Institute of Aeronautical Engineering",
             position:'UG in B.Tech',
             duration:"2022-Present",
-            gpa:"GPA : 8.51",
+            gpa:"GPA: 8.43",
             logo:'/assets/logo/iare.svg', 
         },
         {
             institution:"Narayana Junior College",
-            position:'Intermediate',
+            position:'Intermediate, MPC',
             duration:"2020-2022",
-            gpa:"Percentage : 95.8%",
+            gpa:"Percentage: 95.8%",
             logo:'/assets/logo/narayana.svg', 
         },
         {
             institution:"Montessori E.M. School",
-            position:'High School',
+            position:'High School, SSC',
             duration:"2015-2020",
-            gpa:"GPA : 9.8",
+            gpa:"GPA: 9.8",
             logo:'/assets/logo/montessori.svg', 
         },
     ],
 };
 
-
+const cocurricular={
+    icon:'/assests/resume/badge.svg',
+    title:'Co-Curricular',
+    description:
+    "Engaged in activities that enhance creativity, teamwork, and leadership beyond academics.",
+    items:[
+        {
+            company:"e-DAM",
+            position:'Video Editor',
+            duration:"Apr'24 - Mar'25",
+            description:"Edited podcast episodes utilizing professional video editing software such as Inshot, VN and Audacity, enhancing audio clarity and visual appeal.",
+            logo:'/assets/logo/edam.svg', 
+        },
+        {
+            company:"E-Cell",
+            position:'Member',
+            duration:"Oct'23 - Sep'24",
+            description:"Supported team activities and contributed to achieving organizational goals, fostering a collaborative.",
+            logo:'/assets/logo/ecell.svg',
+        },
+    ],
+};
 
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 
@@ -76,25 +67,23 @@ className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     <div className="container mx-auto">
         {/* Section Title */}
         <h2 className="text-center text-4xl font-bold text-white mb-16">Profile</h2>
-        <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
+        <Tabs defaultValue="education" className="flex flex-col xl:flex-row gap-[60px]">
             <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
 
-                <TabsTrigger value="experience">Experience</TabsTrigger>
                 <TabsTrigger value="education">Education</TabsTrigger>
-                
-                
+                <TabsTrigger value="cocurricular">Co-Curricular</TabsTrigger>                
             </TabsList>
 
             {/*Content*/}
             <div className="min-h-[70vh] w-full">
-                {/*experience*/}
-                <TabsContent value="experience" className="w-full">
+                {/*co-curricular*/}
+                <TabsContent value="cocurricular" className="w-full">
                     <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                        <h3 className="text-2xl font-bold">{experience.title}</h3>
-                        <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+                        <h3 className="text-2xl font-bold">{cocurricular.title}</h3>
+                        <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{cocurricular.description}</p>
                         <ScrollArea className="h-[400px]">
                             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                                {experience.items.map((item,index)=>{
+                                {cocurricular.items.map((item,index)=>{
                                     return <li key={index} className="bg-[#232329] h-auto py-6 px-10 rounded-xl flex flex-col justify-center gap-2">
                                     {/* Job Title and Duration in a single row */}
                                     <div className="flex justify-between items-center w-full">
@@ -146,7 +135,7 @@ className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
                                     </div>
                                 
                                     {/* Position/Degree */}
-                                    <h3 className="text-xl text-center lg:text-left">{item.position}</h3>
+                                    <h3 className="text-l text-center lg:text-left">{item.position}</h3>
                                 
                                     {/* GPA with logo */}
                                     <div className="flex items-center gap-3">
@@ -172,10 +161,8 @@ className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
                     </div>
                 </TabsContent>
             </div>
-
         </Tabs>
     </div>
-
 </div>
 };
 

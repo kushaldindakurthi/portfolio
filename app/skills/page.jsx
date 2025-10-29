@@ -1,7 +1,6 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaPython, FaDatabase } from "react-icons/fa";
-import { SiC } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaPython, FaDatabase, FaJava } from "react-icons/fa";
 
 const skills = {
     title: "Skills",
@@ -9,10 +8,10 @@ const skills = {
     skilllist: [
         { icon: <FaPython />, name: "Python" },
         { icon: <FaDatabase />, name: "SQL" },
+        { icon: <FaJava />, name: "Java" },
         { icon: <FaHtml5 />, name: "HTML5" },
         { icon: <FaCss3 />, name: "CSS3" },
         { icon: <FaJs />, name: "JavaScript" },
-        { icon: <SiC />, name: "C" },
         { icon: <FaReact />, name: "React" },
     ],
 };

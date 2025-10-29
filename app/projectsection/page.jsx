@@ -29,20 +29,6 @@ const projects=[
     },
     {
         num: '02',
-        category: 'Web Development',
-        title: 'Portfolio Website',
-        description: 'Designed and developed a modern portfolio website using React and Next.js. Integrated smooth animations and an interactive user interface to showcase projects and skills. Ensured a fully responsive design with optimized performance and SEO best practices.',
-        stack: [
-            { name: "React" }, 
-            { name: "Next.js" }, 
-            { name: "Tailwind CSS" },
-        ],
-        image: '/assets/projectsection/portfolio.png',
-        live: 'https://kushal29d-portfolio.vercel.app/',
-        github: 'https://github.com/kushaldindakurthi/portfolio'
-    },
-    {
-        num: '03',
         category: 'Computer Vision & Web Development',
         title: 'Gesture Music System',
         description: 'Engineered a gesture-based music system using Flask and OpenCV, implementing real-time gesture recognition. Designed and deployed a user-friendly web interface with Flask, enhancing overall user experience.',
@@ -58,7 +44,7 @@ const projects=[
         github: 'https://github.com/kushaldindakurthi/Gesture-Music-System'
     },    
     {
-        num: '04',
+        num: '03',
         category: 'Web Development',
         title: 'Restaurant Management System',
         description: 'Developed a comprehensive Restaurant Management System with a user-friendly interface to enhance reservation and ordering processes. Designed a dynamic and responsive platform using HTML, CSS, and JavaScript, improving overall customer engagement and operational efficiency.',
@@ -70,6 +56,20 @@ const projects=[
         image: '/assets/projectsection/rms.png',
         live: 'https://kushaldindakurthi.github.io/RMS/',
         github: 'https://github.com/kushaldindakurthi/RMS'
+    },
+    {
+        num: '04',
+        category: 'Web Development',
+        title: 'Portfolio Website',
+        description: 'Designed and developed a modern portfolio website using React and Next.js. Integrated smooth animations and an interactive user interface to showcase projects and skills. Ensured a fully responsive design with optimized performance and SEO best practices.',
+        stack: [
+            { name: "React" }, 
+            { name: "Next.js" }, 
+            { name: "Tailwind CSS" },
+        ],
+        image: '/assets/projectsection/portfolio.png',
+        live: 'https://kushal29d-portfolio.vercel.app/',
+        github: 'https://github.com/kushaldindakurthi/portfolio'
     },
     
 ];
@@ -154,12 +154,13 @@ const Projectsection =()=>{
                         {projects.map((project,index)=>{
                             return(
                                 <SwiperSlide key={index} className="w-full">
-                                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                                    <div className="h-[460px] relative group flex justify-center items-center"style={{ backgroundColor: '#1c1c22' }}>
                                     {/*overlay */}
-                                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                    <div className="absolute inset-0 bg-black/30 z-10"></div>
+
                                     {/*image */}
                                     <div className="relative w-full h-full">
-                                        <Image src={project.image} fill className="object-contain" alt='' />
+                                        <Image src={project.image} fill className="object-fill" alt='' />
                                     </div>
                                     </div>
                                 </SwiperSlide>

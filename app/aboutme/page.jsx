@@ -1,9 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
-import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -35,14 +32,14 @@ const AboutMe = () => {
             className="w-full xl:w-1/2 text-center xl:text-left"
           >
             <h2 className="h2 mb-4">About Me</h2>
-            <span className="text-accent text-xl mb-6 block">My journey and passion</span>
+            <span className="text-accent text-xl mb-6 block">Defining My Approach</span>
             
             <p className="mb-6 text-white/80">
-            I'm deeply passionate about creating innovative solutions in web development, database management and python.
+            Passionate about creating innovative digital solutions through web development, database management, and programming with Python, along with working knowledge of Java.
             </p>
             
             <p className="mb-6 text-white/80">
-            Beyond technical expertise, I value leadership and adaptability, ensuring smooth collaboration and continuous learning. My approach combines problem-solving with user-focused design, allowing me to create functional, intuitive applications while exploring new technologies to stay ahead
+            Emphasizes leadership, adaptability, and collaboration while combining problem-solving with user-focused design to build efficient, intuitive applications and stay aligned with emerging technologies.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -55,7 +52,8 @@ const AboutMe = () => {
               <div className="border border-white/20 rounded-lg p-4">
                 <div className="text-accent text-2xl font-bold mb-2">Expertise</div>
                 <div className="text-white/80">Web Development</div>
-                <div className="text-white/60">Databases, Python</div>
+                <div className="text-white/60">Databases, Python, Java</div>
+                
               </div>
             </div>
             
