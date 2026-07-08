@@ -19,7 +19,7 @@ const info = [
     {
         icon: <FaMapMarkerAlt/>,
         title: "Address",
-        description: "Hyderabad, India",
+        description: "Guntur, India",
     },
 ];
 
