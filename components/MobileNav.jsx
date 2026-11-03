@@ -69,7 +69,7 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col h-screen p-4">
+      <SheetContent className="flex flex-col h-screen p-4 overflow-y-auto">
         <SheetTitle className="sr-only">
           Mobile Navigation
         </SheetTitle>
@@ -81,7 +81,7 @@ const MobileNav = () => {
           </Link>
         </div>
         {/* Flexbox for navigation links */}
-        <nav className="flex flex-col justify-between items-center flex-grow gap-8">
+        <nav className="flex flex-col items-center gap-8 pb-6">
           {links.map((link, index) => {
             return (
               <Link

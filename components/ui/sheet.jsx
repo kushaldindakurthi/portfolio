@@ -50,8 +50,18 @@ const SheetContent = React.forwardRef(({ side = "right", className, children, ..
     <SheetPrimitive.Content ref={ref} className={cn(sheetVariants({ side }), className)} {...props}>
       {children}
       <SheetPrimitive.Close
-        className="absolute right-8 top-8 transition-opacity outline-none">
-        <IoMdClose className="text-3xl text-accent" />
+        className="absolute right-8 top-8
+          bg-black text-[#00ff99]
+          w-10 h-10 rounded-full
+          flex items-center justify-center
+          border border-white
+          shadow-[0_0_6px_#00ff99]
+          transition-all duration-300 ease-in-out
+          hover:bg-[#00ff99] hover:text-black
+          hover:scale-110 hover:shadow-none
+          outline-none"
+      >
+        <IoMdClose className="text-2xl" />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
