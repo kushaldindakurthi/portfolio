@@ -8,7 +8,7 @@ const services = [
     num: "01",
     title: "Salesforce: AI Specialist",
     description:
-      "Completed the Salesforce AI Specialist certification. Learned to improve service using Salesforce tools.",
+      "Focused on applying generative AI within the Salesforce ecosystem, covering Prompt Builder, Agentforce capabilities, prompt engineering, and the Einstein Trust Layer for secure and reliable AI interactions.",
     company: "Salesforce",
     technologies: ["Service Cloud", "Automation", "Customer Service"],
     logo: "/assets/logo/salesforce.svg",
@@ -18,7 +18,7 @@ const services = [
     num: "02",
     title: "Salesforce: AI Associate",
     description:
-      "Completed the Salesforce AI Associate certification. Learned the basics of AI, how it's used in Salesforce.",
+      "Covered the foundations of artificial intelligence and its applications in CRM, with emphasis on AI capabilities, data quality, ethical considerations, and Salesforce's Trusted AI Principles.",
     company: "Salesforce",
     technologies: ["AI Basics", "Salesforce", "Responsible AI"],
     logo: "/assets/logo/salesforce.svg",
@@ -27,7 +27,7 @@ const services = [
   {
     num: "03",
     title: "Cisco: Programming Essentials in Python",
-    description: "Certification in Python programming fundamentals from Cisco.",
+    description: "Developed a strong foundation in Python programming through core concepts such as data types, control flow, functions, and data structures, along with writing and debugging programs.",
     company: "Cisco Networking Academy",
     technologies: ["Python"],
     logo: "/assets/logo/cisco.svg",
@@ -37,7 +37,7 @@ const services = [
     num: "04",
     title: "NPTEL: The Joy of Computing Using Python",
     description:
-      "Completed NPTEL course covering computational thinking and problem-solving with Python.",
+      "Explored computational thinking and algorithmic problem-solving using Python, covering topics such as searching, sorting, recursion, and applying programming concepts to practical computing problems.",
     company: "NPTEL (IIT Madras)",
     technologies: ["Python","Problem Solving"],
     logo: "/assets/logo/nptel.svg",

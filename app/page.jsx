@@ -2,7 +2,7 @@
 import React, { useState,useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { FiExternalLink, FiX } from "react-icons/fi";
+import { FiExternalLink, FiX, FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import AboutMe from "./aboutme/page";
@@ -40,16 +40,14 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Student</span>
-            <h1 className="h1">
+            <span className="text-xl">CS Graduate | AI & Software Development</span>
+            <h1 className="text-5xl xl:text-6xl font-bold xl:my-4">
               Hi I'm
               <br />
               <span className="text-accent">Dindakurthi Kushal</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              A B.Tech student specializing in AI & ML at IARE College, Hyderabad, with a sharp
-              attention to detail, curiosity, and a commitment to creating
-              meaningful and efficient technological solutions.
+              A Computer Science and Engineering graduate with experience in building AI-driven solutions and developing software applications. Experienced in Python, SQL, and AI, with the ability to integrate technologies to build effective solutions.
             </p>
 
             {/* Button and social */}
@@ -125,7 +123,7 @@ const Home = () => {
 
       {/* Contact Section */}
       <div id="contact" className="pt-20 xl:pt-24">
-        <Contact />
+        <Contact setShowResume={setShowResume} />
       </div>
 
       {/* Resume Modal */}
@@ -147,6 +145,22 @@ const Home = () => {
               <FiX className="text-2xl" />
             </button>
 
+            {/* Download Button */}
+            <a
+                href="/assets/D Kushal Resume.pdf"
+                download="Dindakurthi_Kushal_Resume.pdf"
+                className="absolute -top-5 -left-5
+                          bg-black text-[#00ff99]
+                          w-10 h-10 rounded-full flex items-center justify-center
+                          border border-white
+                          shadow-[0_0_6px_#00ff99]
+                          transition-all duration-300 ease-in-out
+                          hover:bg-[#00ff99] hover:text-black hover:scale-110 hover:shadow-none"
+                title="Download Resume"
+            >
+                <FiDownload className="text-xl" />
+            </a>
+            
             {/* Embedded Resume */}
             <iframe
               src="/assets/D Kushal Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"

@@ -17,7 +17,7 @@ const projects=[
         num: '01',
         category: 'ML & Web Development',
         title: 'CardioInsight',
-        description: 'Developed a cardiovascular disease prediction application using Flask and ML. Implemented an intuitive interface for health metrics input and created a PDF report generator that provides personalized assessments and recommendations based on prediction results.',
+        description: 'Engineered a full-stack ML application to predict cardiovascular disease risk using clinical data, with a Flask API and React interface. Implemented a stacking ensemble using XGBoost, CatBoost, and SVM, achieving 94% accuracy. Includes personalized health advice, performance visualizations, and downloadable PDF reports.',
         stack: [
             { name: "ML" }, 
             { name: "React" }, 
@@ -31,7 +31,7 @@ const projects=[
         num: '02',
         category: 'Computer Vision & Web Development',
         title: 'Gesture Music System',
-        description: 'Engineered a gesture-based music system using Flask and OpenCV, implementing real-time gesture recognition. Designed and deployed a user-friendly web interface with Flask, enhancing overall user experience.',
+        description: 'Built a touch-free music controller using Python and OpenCV to detect hand movements and recognize gestures in real time. Integrated gesture-based playback controls with a Flask backend and responsive web interface, enabling music control without physical input devices.',
         stack: [
             { name: "HTML5" }, 
             { name: "CSS3" }, 
@@ -47,7 +47,7 @@ const projects=[
         num: '03',
         category: 'Web Development',
         title: 'Restaurant Management System',
-        description: 'Developed a comprehensive Restaurant Management System with a user-friendly interface to enhance reservation and ordering processes. Designed a dynamic and responsive platform using HTML, CSS, and JavaScript, improving overall customer engagement and operational efficiency.',
+        description: 'Developed a responsive web application integrating menu browsing, table reservations, and food ordering. Implemented JavaScript form validation and dynamic ordering functionality, with layouts optimized for desktop and mobile screens.',
         stack: [
             { name: "HTML5" }, 
             { name: "CSS3" }, 

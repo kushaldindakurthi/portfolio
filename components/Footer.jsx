@@ -10,7 +10,7 @@ const socials = [
 const Footer = () => {
   return (
     <footer className="w-full bg-[#0d0d0d] bg-opacity-50 text-white py-6 text-center">
-      <p className="text-sm">© 2025 Dindakurthi Kushal | All Rights Reserved</p>
+      <p className="text-sm">© 2026 Dindakurthi Kushal | All Rights Reserved</p>
       
       {/* Social Icons */}
       <div className="flex justify-center gap-6 mt-4">

@@ -28,3 +28,37 @@ html, body {
   overflow: auto;  
   scroll-behavior: smooth;
 }
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  container-type: inline-size;
+}
+
+.contact-primary-buttons {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.contact-actions > button {
+  margin-left: auto;
+  flex: 0 0 auto;
+}
+
+@container (max-width: 420px) {
+  .contact-primary-buttons {
+    flex: 1 1 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .contact-actions > button {
+    flex: 0 0 100%;
+    max-width: 10rem;
+    margin-inline: auto;
+  }
+}

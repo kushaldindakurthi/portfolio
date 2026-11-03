@@ -42,32 +42,38 @@ const Nav = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = links
-        .filter(link => link.path.startsWith('#'))
+        .filter(link => link.path.startsWith("#"))
         .map(link => {
-          const id = link.path.substring(1); 
+          const id = link.path.substring(1);
           return document.getElementById(id);
         })
         .filter(Boolean);
-      
-      const homeSection = { getBoundingClientRect: () => ({ top: 0, bottom: window.innerHeight }) };
-      
-      let currentSection = "/"; 
-      
-      
+
+      let currentSection = "/";
+
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const rect = section.getBoundingClientRect();
-        
+
         if (rect.top <= 150) {
           currentSection = `#${section.id}`;
           break;
         }
       }
-      
+
+      const contactSection = document.getElementById("contact");
+
+      if (
+        contactSection &&
+        contactSection.getBoundingClientRect().top <= 150
+      ) {
+        currentSection = "#contact";
+      }
+
       if (window.scrollY < 100) {
         currentSection = "/";
       }
-      
+
       setActiveSection(currentSection);
     };
     
